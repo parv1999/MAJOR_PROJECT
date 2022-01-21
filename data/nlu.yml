@@ -16,6 +16,16 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+- intent: architect 
+  examples: |
+    - Who built the [Taj Mahal](monument)
+    - Who made the [Statue of Liberty](monument)
+    - Who designed [Buckingham Palace](monument)
+    - Who constructed the [Colosseum](monument)
+    - Who was the architect of [Mount Rushmore](monument)
+    - Who constructed the [Leaning Tower of Pisa](monument) 
+    - who designed [castillo de san andrés](monument)
+    - who designed [villa le trident](monument)
 
 - intent: goodbye
   examples: |
