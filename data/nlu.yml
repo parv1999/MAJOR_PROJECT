@@ -20,53 +20,58 @@ nlu:
 - intent: architect 
   examples: |
     - Who built the [Taj Mahal](monument)
-    - Who made the [Statue of Liberty](monument)
-    - Who designed [Buckingham Palace](monument)
-    - Who constructed the [Colosseum](monument)
-    - Who was the architect of [Mount Rushmore](monument)
-    - Who constructed the [Leaning Tower of Pisa](monument) 
-    - who designed [castillo de san andrés](monument)
-    - who designed [villa le trident](monument)
-    - Who constructed [Edinburgh Castle]{'entity': "monument",'value': "Edinburgh Castle"}
-    - Who built the [Cologne Cathedral]{'entity':'monument','value':'Cologne Cathedral'}
     - Who constructed [Hawa Mahal]{'entity':'monument','value':'Hawa Mahal'}
+    - Who constructed the [Colosseum]{'entity':'monument','Value':'Colosseum'}
     - Who built the [Golden Temple]{'entity':'monument','value':'Golden Temple'}
+    - Who designed [Rhodes Memorial]{'entity':'monument','value':'Rhodes Memorial'}  
+    - who designed [Villa Le Trident]{'entity':"monument",'value':'Villa Le Trident'}
+    - Who built the [Cologne Cathedral]{'entity':'monument','value':'Cologne Cathedral'}
+    - Who designed [Bismarck monument]{'entity':'monument','value':'Bismarck monument'}
+    - Who made the [Statue of Liberty]{'entity':'monument','value':'Statue of Liberty'}
+    - Who designed [Buckingham Palace]{'entity':'monument','value':'Buckingham Palace'}
+    - Who constructed [Edinburgh Castle]{'entity': "monument",'value':'Edinburgh Castle'}
+    - Who was the architect of [Mount Rushmore]{'entity':'monument','value':'Mount Rushmore'}
+    - who designed [Castillo de San Andrés]{'entity':'monument','value':'Castillo de San Andrés'}
     - Who constructed the [Acropolis of Athens]{'entity':'monument','value':'Acropolis of Athens'}
+    - Who constructed the [Leaning Tower of Pisa]{'enity':'monument','value':'Leaning Tower of Pisa'}
 
 - intent: date_of_building    
   examples: |
-    - When was Taj Mahal built
-    - When was Stonehenge built
-    - When was Amber Fort built
-    - When was Pont du Gard built
-    - When was the colosseum made
-    - When was Alhumbra constructed
-    - When was the Eiffel Tower built
-    - When was Lake Palace constructed
-    - How old is the Great Pyramid of Giza
-    - When was the Leaning Tower of Pisa built
+    - When was [Taj Mahal](monument) built
+    - When was [Stonehenge](monument) built
+    - When was [Amber Fort](monument) built
+    - When was [Pont du Gard](monument) built
+    - When was the [colosseum](monument) made
+    - When was [Alhumbra](monument) constructed
+    - When was the [Eiffel Tower built](monument)
+    - When was [Lake Palace](monument) constructed
+    - How old is the [Great Pyramid of Giza](monument)
+    - when was [statue of Parashurama](monument) built
+    - When was the [Leaning Tower of Pisa](monument) built
+    - When was the [Mansu Hill Grand Monument](monument) built
     
 - intent : origin
   examples: |
-    - Where is Taj Mahal
-    - location of Farhad and Shirin monument
-    - where can one find Noah's Mausoleum
-    - give me the location of Garabaghlar Mausoleum
-    - longitude of Mirali Mausoleum
-    - longitude of monument to the Heroes of Warsaw
-    - give me the location of the North Wall
-    - give me the location of Terreiro da Luta
-    - location of Tomb of Dai Anga
-    - where is Mersin Martyrs' Memorial located in
-    - give me the location of Villa Le Trident
-    - latitude of Sigismund Bell
-    - Where is Bondi Beach located 
-    - Where is Coloseum located 
-    - Where is the Statue of Liberty located 
-    - Where is the Great Pyramid of Giza located 
-    - Where is the Lotus Temple located
-    - Where is Pont du Gard located
-    - what are the coordinates of Kentucky Medal of Honor Memorial
+    - Where is [Taj Mahal](monument)
+    - location of [Farhad and Shirin monument](monument)
+    - where can one find [Noah's Mausoleum](monument)
+    - give me the location of [Garabaghlar Mausoleum](monument)
+    - longitude of [Mirali Mausoleum](monument)
+    - longitude of monument to the [Heroes of Warsaw](monument)
+    - give me the location of the [North Wall](monument)
+    - give me the location of [Terreiro da Luta](monument)
+    - location of [Tomb of Dai Anga](monument)
+    - where is [Mersin Martyrs' Memorial](monument) located in
+    - give me the location of [Villa Le Trident](monument)
+    - latitude of [Sigismund Bell](monument)
+    - Where is [Bondi Beach](monument) located 
+    - Where is [Coloseum](monument) located 
+    - Where is the [Statue of Liberty](monument) located 
+    - Where is the Great [Pyramid of Giza](monument) located 
+    - Where is the [Lotus Temple](monument) located
+    - Where is [Pont du Gard](monument) located
+    - what are the coordinates of [Kentucky Medal of Honor Memorial](monument)
+
 - intent: goodbye
   examples: |
     - cu
