@@ -16,6 +16,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+
 - intent: architect 
   examples: |
     - Who built the [Taj Mahal](monument)
@@ -26,7 +27,46 @@ nlu:
     - Who constructed the [Leaning Tower of Pisa](monument) 
     - who designed [castillo de san andrés](monument)
     - who designed [villa le trident](monument)
+    - Who constructed [Edinburgh Castle]{'entity': "monument",'value': "Edinburgh Castle"}
+    - Who built the [Cologne Cathedral]{'entity':'monument','value':'Cologne Cathedral'}
+    - Who constructed [Hawa Mahal]{'entity':'monument','value':'Hawa Mahal'}
+    - Who built the [Golden Temple]{'entity':'monument','value':'Golden Temple'}
+    - Who constructed the [Acropolis of Athens]{'entity':'monument','value':'Acropolis of Athens'}
 
+- intent: date_of_building    
+  examples: |
+    - When was Taj Mahal built
+    - When was Stonehenge built
+    - When was Amber Fort built
+    - When was Pont du Gard built
+    - When was the colosseum made
+    - When was Alhumbra constructed
+    - When was the Eiffel Tower built
+    - When was Lake Palace constructed
+    - How old is the Great Pyramid of Giza
+    - When was the Leaning Tower of Pisa built
+    
+- intent : origin
+  examples: |
+    - Where is Taj Mahal
+    - location of Farhad and Shirin monument
+    - where can one find Noah's Mausoleum
+    - give me the location of Garabaghlar Mausoleum
+    - longitude of Mirali Mausoleum
+    - longitude of monument to the Heroes of Warsaw
+    - give me the location of the North Wall
+    - give me the location of Terreiro da Luta
+    - location of Tomb of Dai Anga
+    - where is Mersin Martyrs' Memorial located in
+    - give me the location of Villa Le Trident
+    - latitude of Sigismund Bell
+    - Where is Bondi Beach located 
+    - Where is Coloseum located 
+    - Where is the Statue of Liberty located 
+    - Where is the Great Pyramid of Giza located 
+    - Where is the Lotus Temple located
+    - Where is Pont du Gard located
+    - what are the coordinates of Kentucky Medal of Honor Memorial
 - intent: goodbye
   examples: |
     - cu
