@@ -8,7 +8,9 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - origin
+  - date_of_building
+  - architect
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -28,6 +30,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  
+  utter_date_of_building:
+  - text: "It was built long ago"
+
 
 session_config:
   session_expiration_time: 60
