@@ -34,4 +34,4 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: date_of_building
-  - action: utter_date_of_building
+  - action: action_date_of_building

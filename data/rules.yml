@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Tell the age of monument
+  steps:
+     - intent: date_of_building 
+     - action: action_date_of_building

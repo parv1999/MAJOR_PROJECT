@@ -11,6 +11,15 @@ intents:
   - origin
   - date_of_building
   - architect
+  - greet_name
+
+entities:
+  - name
+  - monument  
+
+actions:
+  - action_date_of_building
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -32,8 +41,10 @@ responses:
   - text: "I am a bot, powered by Rasa."
   
   utter_date_of_building:
-  - text: "It was built long ago"
+  - text: "{building} was built {years} ago"
 
+  say_greet_name:
+  - text: "Hey there {name}, How are you !!!"
 
 session_config:
   session_expiration_time: 60

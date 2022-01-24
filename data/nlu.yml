@@ -17,23 +17,30 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: greet_name
+  examples: |
+    - Hi [Raju](name), Long time no see !!
+    - Hey there!,How are you [Raghav](name)
+    - Welcome back [Parv](name), How are you !
+    - Hello [messi](name) 
+
 - intent: architect 
   examples: |
     - Who built the [Taj Mahal](monument)
-    - Who constructed [Hawa Mahal]{'entity':'monument','value':'Hawa Mahal'}
-    - Who constructed the [Colosseum]{'entity':'monument','Value':'Colosseum'}
-    - Who built the [Golden Temple]{'entity':'monument','value':'Golden Temple'}
-    - Who designed [Rhodes Memorial]{'entity':'monument','value':'Rhodes Memorial'}  
-    - who designed [Villa Le Trident]{'entity':"monument",'value':'Villa Le Trident'}
-    - Who built the [Cologne Cathedral]{'entity':'monument','value':'Cologne Cathedral'}
-    - Who designed [Bismarck monument]{'entity':'monument','value':'Bismarck monument'}
-    - Who made the [Statue of Liberty]{'entity':'monument','value':'Statue of Liberty'}
-    - Who designed [Buckingham Palace]{'entity':'monument','value':'Buckingham Palace'}
-    - Who constructed [Edinburgh Castle]{'entity': "monument",'value':'Edinburgh Castle'}
-    - Who was the architect of [Mount Rushmore]{'entity':'monument','value':'Mount Rushmore'}
-    - who designed [Castillo de San Andrés]{'entity':'monument','value':'Castillo de San Andrés'}
-    - Who constructed the [Acropolis of Athens]{'entity':'monument','value':'Acropolis of Athens'}
-    - Who constructed the [Leaning Tower of Pisa]{'enity':'monument','value':'Leaning Tower of Pisa'}
+    - Who constructed [Hawa Mahal](monument) 
+    - Who constructed the [Colosseum](monument) 
+    - Who built the [Golden Temple](monument)
+    - Who designed [Rhodes Memorial](monument)  
+    - who designed [Villa Le Trident](monument) 
+    - Who built the [Cologne Cathedral](monument) 
+    - Who designed [Bismarck monument](monument)
+    - Who made the [Statue of Liberty](monument) 
+    - Who designed [Buckingham Palace](monument) 
+    - Who constructed [Edinburgh Castle](monument) 
+    - Who was the architect of [Mount Rushmore](monument) 
+    - who designed [Castillo de San Andrés](monument) 
+    - Who constructed the [Acropolis of Athens](monument) 
+    - Who constructed the [Leaning Tower of Pisa](monument) 
 
 - intent: date_of_building    
   examples: |
@@ -43,10 +50,10 @@ nlu:
     - When was [Pont du Gard](monument) built
     - When was the [colosseum](monument) made
     - When was [Alhumbra](monument) constructed
-    - When was the [Eiffel Tower built](monument)
+    - When was the [Eiffel Tower](monument) built
     - When was [Lake Palace](monument) constructed
     - How old is the [Great Pyramid of Giza](monument)
-    - when was [statue of Parashurama](monument) built
+    - when was [Statue of Parashurama](monument) built
     - When was the [Leaning Tower of Pisa](monument) built
     - When was the [Mansu Hill Grand Monument](monument) built
     
@@ -67,10 +74,53 @@ nlu:
     - Where is [Bondi Beach](monument) located 
     - Where is [Coloseum](monument) located 
     - Where is the [Statue of Liberty](monument) located 
-    - Where is the Great [Pyramid of Giza](monument) located 
+    - Where is the [Great Pyramid of Giza](monument) located 
     - Where is the [Lotus Temple](monument) located
     - Where is [Pont du Gard](monument) located
     - what are the coordinates of [Kentucky Medal of Honor Memorial](monument)
+
+- lookup: monument
+  examples: |
+
+    - Taj Mahal
+    - Hawa Mahal
+    - Villa Le Trident
+    - Colosseum
+    - Cologne Cathedral
+    - Statue of Liberty
+    - Lotus Temple 
+    - Great Pyramid of Giza
+    - Bondi Beach
+    - Pont du Gard
+    - Mirali Mausoleum
+    - Terreiro da Lutta
+    - Tomb of Dai Anga
+    - Sigismund Bell
+    - Kentucky Medal of Honor Memorial 
+    - Garabaghlar Mausoleum
+    - Farhad and Shirin monument
+    - Noah's Mausoleum
+    - Mirali Mausoleum
+    - North Wall
+    - Mersin Martyrs' Memorial
+    - Amber Fort
+    - Heroes of Warsaw 
+    - Leaning Tower of Pisa
+    - ALhumbra 
+    - Stonehenge
+    - Mansu Hill Grand Monument
+    - Lake Palace
+    - Eiffel Tower
+    - Statue of Parashurama
+    - Bismarck monument
+    - Buckingham Palace
+    - Edinburgh Castle 
+    - Mount Rushmore
+    - Castillo de San Andrés 
+    - Acropolis of Athens
+    - Rhodes Memorial
+    - Golden Temple
+
 
 - intent: goodbye
   examples: |
