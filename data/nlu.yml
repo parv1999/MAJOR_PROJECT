@@ -1,0 +1,196 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: greet_name
+  examples: |
+    - Hi [Raju](name), Long time no see !!
+    - Hey there!,How are you [Raghav](name)
+    - Welcome back [Parv](name), How are you !
+    - Hello [messi](name) 
+
+- intent: architect 
+  examples: |
+    - Who built the [Taj Mahal](monument)
+    - Who constructed [Hawa Mahal](monument) 
+    - Who constructed the [Colosseum](monument) 
+    - Who built the [Golden Temple](monument)
+    - Who designed [Rhodes Memorial](monument)  
+    - who designed [Villa Le Trident](monument) 
+    - Who built the [Cologne Cathedral](monument) 
+    - Who designed [Bismarck monument](monument)
+    - Who made the [Statue of Liberty](monument) 
+    - Who designed [Buckingham Palace](monument) 
+    - Who constructed [Edinburgh Castle](monument) 
+    - Who was the architect of [Mount Rushmore](monument) 
+    - who designed [Castillo de San Andrés](monument) 
+    - Who constructed the [Acropolis of Athens](monument) 
+    - Who constructed the [Leaning Tower of Pisa](monument) 
+
+- intent: date_of_building    
+  examples: |
+    - When was [Taj Mahal](monument) built
+    - When was [Stonehenge](monument) built
+    - When was [Amber Fort](monument) built
+    - When was [Pont du Gard](monument) built
+    - When was the [colosseum](monument) made
+    - When was [Alhumbra](monument) constructed
+    - When was the [Eiffel Tower](monument) built
+    - When was [Lake Palace](monument) constructed
+    - How old is the [Great Pyramid of Giza](monument)
+    - when was [Statue of Parashurama](monument) built
+    - When was the [Leaning Tower of Pisa](monument) built
+    - When was the [Mansu Hill Grand Monument](monument) built
+    
+- intent : origin
+  examples: |
+    - Where is [Taj Mahal](monument)
+    - location of [Farhad and Shirin monument](monument)
+    - where can one find [Noah's Mausoleum](monument)
+    - give me the location of [Garabaghlar Mausoleum](monument)
+    - longitude of [Mirali Mausoleum](monument)
+    - longitude of monument to the [Heroes of Warsaw](monument)
+    - give me the location of the [North Wall](monument)
+    - give me the location of [Terreiro da Luta](monument)
+    - location of [Tomb of Dai Anga](monument)
+    - where is [Mersin Martyrs' Memorial](monument) located in
+    - give me the location of [Villa Le Trident](monument)
+    - latitude of [Sigismund Bell](monument)
+    - Where is [Bondi Beach](monument) located 
+    - Where is [Coloseum](monument) located 
+    - Where is the [Statue of Liberty](monument) located 
+    - Where is the [Great Pyramid of Giza](monument) located 
+    - Where is the [Lotus Temple](monument) located
+    - Where is [Pont du Gard](monument) located
+    - what are the coordinates of [Kentucky Medal of Honor Memorial](monument)
+
+- lookup: monument
+  examples: |
+
+    - Taj Mahal
+    - Hawa Mahal
+    - Villa Le Trident
+    - Colosseum
+    - Cologne Cathedral
+    - Statue of Liberty
+    - Lotus Temple 
+    - Great Pyramid of Giza
+    - Bondi Beach
+    - Pont du Gard
+    - Mirali Mausoleum
+    - Terreiro da Lutta
+    - Tomb of Dai Anga
+    - Sigismund Bell
+    - Kentucky Medal of Honor Memorial 
+    - Garabaghlar Mausoleum
+    - Farhad and Shirin monument
+    - Noah's Mausoleum
+    - Mirali Mausoleum
+    - North Wall
+    - Mersin Martyrs' Memorial
+    - Amber Fort
+    - Heroes of Warsaw 
+    - Leaning Tower of Pisa
+    - ALhumbra 
+    - Stonehenge
+    - Mansu Hill Grand Monument
+    - Lake Palace
+    - Eiffel Tower
+    - Statue of Parashurama
+    - Bismarck monument
+    - Buckingham Palace
+    - Edinburgh Castle 
+    - Mount Rushmore
+    - Castillo de San Andrés 
+    - Acropolis of Athens
+    - Rhodes Memorial
+    - Golden Temple
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

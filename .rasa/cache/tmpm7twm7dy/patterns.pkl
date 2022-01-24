@@ -1,0 +1,6 @@
+[
+  {
+    "name": "monument",
+    "pattern": "(\\bTaj\\ Mahal\\b|\\bHawa\\ Mahal\\b|\\bVilla\\ Le\\ Trident\\b|\\bColosseum\\b|\\bCologne\\ Cathedral\\b|\\bStatue\\ of\\ Liberty\\b|\\bLotus\\ Temple\\b|\\bGreat\\ Pyramid\\ of\\ Giza\\b|\\bBondi\\ Beach\\b|\\bPont\\ du\\ Gard\\b|\\bMirali\\ Mausoleum\\b|\\bTerreiro\\ da\\ Lutta\\b|\\bTomb\\ of\\ Dai\\ Anga\\b|\\bSigismund\\ Bell\\b|\\bKentucky\\ Medal\\ of\\ Honor\\ Memorial\\b|\\bGarabaghlar\\ Mausoleum\\b|\\bFarhad\\ and\\ Shirin\\ monument\\b|\\bNoah's\\ Mausoleum\\b|\\bMirali\\ Mausoleum\\b|\\bNorth\\ Wall\\b|\\bMersin\\ Martyrs'\\ Memorial\\b|\\bAmber\\ Fort\\b|\\bHeroes\\ of\\ Warsaw\\b|\\bLeaning\\ Tower\\ of\\ Pisa\\b|\\bALhumbra\\b|\\bStonehenge\\b|\\bMansu\\ Hill\\ Grand\\ Monument\\b|\\bLake\\ Palace\\b|\\bEiffel\\ Tower\\b|\\bStatue\\ of\\ Parashurama\\b|\\bBismarck\\ monument\\b|\\bBuckingham\\ Palace\\b|\\bEdinburgh\\ Castle\\b|\\bMount\\ Rushmore\\b|\\bCastillo\\ de\\ San\\ Andrés\\b|\\bAcropolis\\ of\\ Athens\\b|\\bRhodes\\ Memorial\\b|\\bGolden\\ Temple\\b)"
+  }
+]
