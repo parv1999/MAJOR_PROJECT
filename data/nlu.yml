@@ -24,60 +24,173 @@ nlu:
     - Welcome back [Parv](name), How are you !
     - Hello [messi](name) 
 
-- intent: architect 
+- intent: human/individual 
   examples: |
-    - Who built the [Taj Mahal](monument)
-    - Who constructed [Hawa Mahal](monument) 
-    - Who constructed the [Colosseum](monument) 
-    - Who built the [Golden Temple](monument)
-    - Who designed [Rhodes Memorial](monument)  
-    - who designed [Villa Le Trident](monument) 
-    - Who built the [Cologne Cathedral](monument) 
-    - Who designed [Bismarck monument](monument)
+    - Who [built](keyword)](keyword) the [Taj Mahal](monument)
+    - Who [constructed](keyword) [Hawa Mahal](monument) 
+    - Who [constructed](keyword) the [Colosseum](monument) 
+    - Who [built](keyword)](keyword) the [Golden Temple](monument)
+    - Who [designed](keyword) [Rhodes Memorial](monument)  
+    - who [designed](keyword) [Villa Le Trident](monument) 
+    - Who [built](keyword) the [Cologne Cathedral](monument) 
+    - Who [designed](keyword) [Bismarck monument](monument)
     - Who made the [Statue of Liberty](monument) 
-    - Who designed [Buckingham Palace](monument) 
-    - Who constructed [Edinburgh Castle](monument) 
-    - Who was the architect of [Mount Rushmore](monument) 
-    - who designed [Castillo de San Andrés](monument) 
-    - Who constructed the [Acropolis of Athens](monument) 
-    - Who constructed the [Leaning Tower of Pisa](monument) 
-
-- intent: date_of_building    
-  examples: |
-    - When was [Taj Mahal](monument) built
-    - When was [Stonehenge](monument) built
-    - When was [Amber Fort](monument) built
-    - When was [Pont du Gard](monument) built
-    - When was the [colosseum](monument) made
-    - When was [Alhumbra](monument) constructed
-    - When was the [Eiffel Tower](monument) built
-    - When was [Lake Palace](monument) constructed
-    - How old is the [Great Pyramid of Giza](monument)
-    - when was [Statue of Parashurama](monument) built
-    - When was the [Leaning Tower of Pisa](monument) built
-    - When was the [Mansu Hill Grand Monument](monument) built
+    - Who [designed](keyword) [Buckingham Palace](monument) 
+    - Who [constructed](keyword) [Edinburgh Castle](monument) Where
+    - Who was the [architect](person) of [Mount Rushmore](monument) 
+    - who [designed](keyword) [Castillo de San Andrés](monument) 
+    - Who [constructed](keyword) the [Acropolis of Athens](monument) 
+    - Who [constructed](keyword) the [Leaning Tower of Pisa](monument) 
+    - Who was in [The Pride of the Yankees](movie)
+    - Who killed [Gandhi](name)
+    - Who is the [founder](keyword) of [Scientology](philosophy)
+    - Who [starred](person) in [Singing in the Rain](movie)
+    - Who [starred](person) in (Singing Nun)
+    - What [singer](person) theme song was [When the Moon Comes over the Mountain](song)
+    - Who was the [inventor](person) of [silly putty](chemical)
+    - Who [killed](keyword)[Kurt Cobain](name)
+    - What was the [name](keyword) of [The Muppets](movie) [creator](person)
+    - Name one of the [major](keyword) [gods of Hinduism](name)
+    - Who is the [Incredible Hulk](person) in [reality](keyword)
+    - Who was the [lawyer](person) for [Randy Steven Craft](name)
+    - Who is [reputed](keyword) to be the [greatest maker of violins](person)
+    - Name of [heroine](person) in [Scruples](movie)
+    - Name the [Four Horsemen of the Apocalypse](religion)
     
-- intent : origin
+
+- intent: human/description 
+  examples: |
+    - Who is [Terrence Malick]{"entity":"name","value":"Terrence Malick"}
+    - Who is [Stein Eriksen](name)
+    - Who is the [Queen Mother](name)
+    - Who is [Coronado](name)
+    - give me some [information](keyword) about [Desmond Tutu](name)
+    - what can you tell me [about](keyword) [Barbara Jordan](name)
+    - what do you know [about](keyword) [Mahatma Gandhi](name)
+    - can you give some [brief](keyword) about [Narendra Modi](name)
+    - give me some [information](keyword) about [Rahul Gandhi](name)
+    - what can you tell me [about](keyword) [bon jovi](name)
+    - what do you know about [thomas edison](name)
+    - can you give some [brief](keyword) about [nikola tesla](name)
+    - give me some information [about](keyword) [elon musk](name)
+    - what can you tell me [about](keyword) [subhash chandra bose](name)
+    - what do you know [about](keyword) [tom holland](name)
+    - can you give some [brief](keyword) about [zendaya](name)
+    - give me some information about [jeff bezos](name)
+    - what can you tell me [about](keyword) [olivia rodrigo](name)
+    - what do you know [about](keyword) [Arya Bhatta](name)
+    - can you give some [brief](keyword) about [Chanakya](name)
+    - give me some information about [Aristotle](name)
+    - what can you tell me [about](keyword) [Isaac Newton](name)
+    - [Thomas Edison](name)
+    - [albert einstien](name)
+    - [desmond tutu](name)
+    - [mother teressa](name)
+    - [sundar pichai](name)
+    - [colin powell](name)
+    - [dear abby](name)
+    - [Lata Mangeshkar](name)
+    - [barbara palvin](name)
+    - [Monica Belluci](name)
+    - [Atal Bihari Vajpayee](name)
+    - [Abdul Kalam](name)
+    - [Nicolo Paganini](name)
+    - Who is [Colin Powell](name)
+    - Who is [Dear Abby](name)
+    - Who was [Monet](name)
+    - Who was [Lacan](name)
+    - Who was [Darius](name)
+    - Who was [Jean Nicolet](name)
+    - Who was [Jane Goodall](name)
+    - Who was [Thucydides](name)
+    - Who is [Samuel Pickering](name)
+    - Who was [William Henry Harrison](name)
+    - What information can you tell me [about](keyword) actor [James Cromwell](name)
+    - Who is [Shirley MacLaine](name)
+    - Who is [Ishmael in Moby Dick](name)
+    - Who was [Whitcomb Judson](name)
+    - Who is [Langston Hughes](name)
+    - Who is [Johnny Carson](name)
+    - Who is [Count Cinzano](name)
+    - Tell me something [about](keyword) [Stephen Hawking](name)
+    - Throw some light on [Quetzalcoatl](name)
+    - Tell me something [about](keyword) [Damocles] (name(name))
+    - Who was [Red Grange](name)
+    - Who was [Santos Dumont](name)
+    - Tell me something [about](keyword) [John Macarthur](name)
+    - Tell me something [about](keyword) [Peter Weir] (name)
+    - Throw some light on [Samuel F Pickering](name)
+    - Who is [Desmond Tutu](name)
+    - what [information](keyword) can you tell me [about](keyword) author [William Wordsworth](name)
+    - Who was [Picasso](name)
+    - Who was [Jinnah](name)
+    - Who was [Maria Theresa](name)
+    - Who is [Zebulon Pike](name)
+    - Tell me something [about](keyword) [Buffalo Bill](name)
+    - Tell me something [about](keyword) [Alan Turing](name)
+    - Throw some light on [Albert Einstein](name)
+    - Throw some light on [Srinivasa Ramanujan](name)
+    - Tell me something [about](keyword) [Ezra Taft Benson](name)
+
+- intent: human/title
+  examples: |
+    - What is the [oldest](adjective) [profession](keyword)
+    - What is the [occupation](keyword) of [Nicholas Cage](name)
+    - What was the [occupation](keyword) of [Mandy Rice Davies](name)
+    - What is [Nicholas Cage](name) [occupation](keyword)
+    - What did the [Seven Dwarfs](name) do for a [living](keyword)
+    - What are the only players eligible to score points in Roller Derby called
+    - What did [Andy Hardy](name) [father](keyword) do for a [living](keyword)
+    - What [task](keyword) does the Bouvier breed of dog perform
+    - When not adventuring on Rann what does Adam Strange call his profession
+    - What [occupation](keyword) has the [highest](adjective) [divorce rate](keyword)
+    - What title does comedian Henry Youngman claim
+    - What is Nicholas Cage profession
+    - What does Robin Williams do
+    - What title did [Shevardnadze](name) have during the Soviet era
+    - What does [Larry King](name) do for a living
+    - What does [Nicholas Cage](name) do for a living
+    - What [Mrs Bridges](name) job on [TV Upstairs Downstairs](movie)
+    - What is [Steve Rogers](name) profession when he not [Captain America](movie)
+    - What is [Larry King](name) occupation
+    
+
+- intent: number/date      
+  examples: |
+    - When was [Taj Mahal](monument) [built](keyword)
+    - When was [Stonehenge](monument) [built](keyword)
+    - When was [Amber Fort](monument) [built](keyword)
+    - When was [Pont du Gard](monument) [built](keyword)
+    - When was the [colosseum](monument) made
+    - When was [Alhumbra](monument) [constructed](keyword)
+    - When was the [Eiffel Tower](monument) [built](keyword)
+    - When was [Lake Palace](monument) [constructed](keyword)
+    - How old is the [Great Pyramid of Giza](monument)
+    - when was [Statue of Parashurama](monument) [built](keyword)
+    - When was the [Leaning Tower of Pisa](monument) [built](keyword)
+    - When was the [Mansu Hill Grand Monument](monument) [built](keyword)
+    
+- intent : loc/origin
   examples: |
     - Where is [Taj Mahal](monument)
-    - location of [Farhad and Shirin monument](monument)
+    - [location](keyword) of [Farhad and Shirin monument](monument)
     - where can one find [Noah's Mausoleum](monument)
-    - give me the location of [Garabaghlar Mausoleum](monument)
-    - longitude of [Mirali Mausoleum](monument)
-    - longitude of monument to the [Heroes of Warsaw](monument)
-    - give me the location of the [North Wall](monument)
-    - give me the location of [Terreiro da Luta](monument)
-    - location of [Tomb of Dai Anga](monument)
-    - where is [Mersin Martyrs' Memorial](monument) located in
-    - give me the location of [Villa Le Trident](monument)
-    - latitude of [Sigismund Bell](monument)
-    - Where is [Bondi Beach](monument) located 
-    - Where is [Coloseum](monument) located 
-    - Where is the [Statue of Liberty](monument) located 
-    - Where is the [Great Pyramid of Giza](monument) located 
-    - Where is the [Lotus Temple](monument) located
-    - Where is [Pont du Gard](monument) located
-    - what are the coordinates of [Kentucky Medal of Honor Memorial](monument)
+    - give me the [location](keyword) of [Garabaghlar Mausoleum](monument)
+    - [longitude](keyword) of [Mirali Mausoleum](monument)
+    - [longitude](keyword) of monument to the [Heroes of Warsaw](monument)
+    - give me the [location](keyword) of the [North Wall](monument)
+    - give me the [location](keyword) of [Terreiro da Luta](monument)
+    - [location](keyword) of [Tomb of Dai Anga](monument)
+    - where is [Mersin Martyrs' Memorial](monument) [located](keyword) in
+    - give me the [location](keyword) of [Villa Le Trident](monument)
+    - [latitude](keyword) of [Sigismund Bell](monument)
+    - Where is [Bondi Beach](monument) [located](keyword) 
+    - Where is [Coloseum](monument) [located](keyword) 
+    - Where is the [Statue of Liberty](monument) [located](keyword) 
+    - Where is the [Great Pyramid of Giza](monument) [located](keyword) 
+    - Where is the [Lotus Temple](monument) [located](keyword)
+    - Where is [Pont du Gard](monument) [located](keyword)
+    - what are the [coordinates](keyword) of [Kentucky Medal of Honor Memorial](monument)
 
 - lookup: monument
   examples: |
@@ -120,7 +233,51 @@ nlu:
     - Acropolis of Athens
     - Rhodes Memorial
     - Golden Temple
+    - Mysore Palace
+    - taj mahal
+    - hawa mahal
+    - villa le trident
+    - colosseum
+    - cologne cathedral
+    - statue of liberty
+    - lotus temple
+    - great pyramid of giza
+    - bondi beach
+    - pont du gard
+    - mirali mausoleum
+    - terreiro da lutta
+    - tomb of dai anga
+    - sigismund bell
+    - kentucky medal of honor memorial
+    - garabaghlar mausoleum
+    - farhad and shirin monument
+    - noah's mausoleum
+    - mirali mausoleum
+    - north wall
+    - mersin martyrs' memorial
+    - amber fort
+    - heroes of warsaw
+    - leaning tower of pisa
+    - alhumbra
+    - stonehenge
+    - mansu hill grand monument
+    - lake palace
+    - eiffel tower
+    - statue of parashurama
+    - bismarck monument
+    - buckingham palace
+    - edinburgh castle
+    - mount rushmore
+    - castillo de san andrés
+    - acropolis of athens
+    - rhodes memorial
+    - golden temple
+    - mysore palace
+    
+- intent: composer
+  examples: |
 
+- intent:   
 
 - intent: goodbye
   examples: |
@@ -194,3 +351,4 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+#[<entity-text>]{"entity": "<entity name>", "role": "<role name>", "group": "<group name>", "value": "<entity synonym>"}
