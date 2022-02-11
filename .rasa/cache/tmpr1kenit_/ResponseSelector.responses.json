@@ -1,0 +1,27 @@
+{
+  "utter_human/individual": [
+    {
+      "text": "You are asking about {name} "
+    }
+  ],
+  "utter_human/description": [
+    {
+      "text": "Description about {name} and keyword: {keyword}"
+    }
+  ],
+  "utter_number/date": [
+    {
+      "text": "{building} was built {years} ago"
+    }
+  ],
+  "utter_human/title": [
+    {
+      "text": "Title of {name} is {keyword}"
+    }
+  ],
+  "utter_loc/origin": [
+    {
+      "text": "Origin of {name} is {keyword}"
+    }
+  ]
+}

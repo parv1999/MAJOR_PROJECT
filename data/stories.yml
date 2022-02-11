@@ -29,9 +29,71 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: date of building path
+
+- story: Human and Individual
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: date_of_building
-  - action: action_date_of_building
+    - intent: human 
+    - action: action_human
+
+- story: number and date
+  steps: 
+    - intent: number
+    - action: action_number
+
+# - story: human and description
+#   steps:
+#     - intent: human/description
+#     - action: action_human_description
+
+# - story: human and title
+#   steps:
+#     - intent: human/title
+#     - action: action_human_title
+
+- story: origin and location
+  steps:
+    - intent: loc
+    - action: action_loc
+
+
+# - story: date of building path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: date_of_building
+#   - action: action_date_of_building
+
+# - story: human and individual
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: human/individual
+#   - action: action_human_individual
+
+# - story: human and description
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: human/description
+#     - action: action_human_description
+
+# - story: human and title
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: human/title
+#     - action: action_human_title
+
+# -  story: location and origin 
+#    steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: loc/origin
+#     - action: action_loc_origin
+
+# - story: number and date
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: number/date
+#   - action: action_number_date

@@ -17,19 +17,19 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: greet_name
-  examples: |
-    - Hi [Raju](name), Long time no see !!
-    - Hey there!,How are you [Raghav](name)
-    - Welcome back [Parv](name), How are you !
-    - Hello [messi](name) 
+# - intent: greet_name
+#   examples: |
+#     - Hi [Raju](name), Long time no see !!
+#     - Hey there!,How are you [Raghav](name)
+#     - Welcome back [Parv](name), How are you !
+#     - Hello [messi](name) 
 
 - intent: human/individual 
   examples: |
-    - Who [built](keyword)](keyword) the [Taj Mahal](monument)
+    - Who [built](keyword) the [Taj Mahal](monument)
     - Who [constructed](keyword) [Hawa Mahal](monument) 
     - Who [constructed](keyword) the [Colosseum](monument) 
-    - Who [built](keyword)](keyword) the [Golden Temple](monument)
+    - Who [built](keyword) the [Golden Temple](monument)
     - Who [designed](keyword) [Rhodes Memorial](monument)  
     - who [designed](keyword) [Villa Le Trident](monument) 
     - Who [built](keyword) the [Cologne Cathedral](monument) 
@@ -48,7 +48,7 @@ nlu:
     - Who [starred](person) in (Singing Nun)
     - What [singer](person) theme song was [When the Moon Comes over the Mountain](song)
     - Who was the [inventor](person) of [silly putty](chemical)
-    - Who [killed](keyword)[Kurt Cobain](name)
+    - Who [killed](keyword) [Kurt Cobain](name)
     - What was the [name](keyword) of [The Muppets](movie) [creator](person)
     - Name one of the [major](keyword) [gods of Hinduism](name)
     - Who is the [Incredible Hulk](person) in [reality](keyword)
@@ -235,49 +235,47 @@ nlu:
     - Golden Temple
     - Mysore Palace
     - taj mahal
-    - hawa mahal
-    - villa le trident
-    - colosseum
-    - cologne cathedral
-    - statue of liberty
-    - lotus temple
-    - great pyramid of giza
-    - bondi beach
-    - pont du gard
-    - mirali mausoleum
-    - terreiro da lutta
-    - tomb of dai anga
-    - sigismund bell
-    - kentucky medal of honor memorial
-    - garabaghlar mausoleum
-    - farhad and shirin monument
-    - noah's mausoleum
-    - mirali mausoleum
-    - north wall
-    - mersin martyrs' memorial
-    - amber fort
-    - heroes of warsaw
-    - leaning tower of pisa
-    - alhumbra
-    - stonehenge
-    - mansu hill grand monument
-    - lake palace
-    - eiffel tower
-    - statue of parashurama
-    - bismarck monument
-    - buckingham palace
-    - edinburgh castle
-    - mount rushmore
-    - castillo de san andrés
-    - acropolis of athens
-    - rhodes memorial
-    - golden temple
-    - mysore palace
+#     - hawa mahal
+#     - villa le trident
+#     - colosseum
+#     - cologne cathedral
+#     - statue of liberty
+#     - lotus temple
+#     - great pyramid of giza
+#     - bondi beach
+#     - pont du gard
+#     - mirali mausoleum
+#     - terreiro da lutta
+#     - tomb of dai anga
+#     - sigismund bell
+#     - kentucky medal of honor memorial
+#     - garabaghlar mausoleum
+#     - farhad and shirin monument
+#     - noah's mausoleum
+#     - mirali mausoleum
+#     - north wall
+#     - mersin martyrs' memorial
+#     - amber fort
+#     - heroes of warsaw
+#     - leaning tower of pisa
+#     - alhumbra
+#     - stonehenge
+#     - mansu hill grand monument
+#     - lake palace
+#     - eiffel tower
+#     - statue of parashurama
+#     - bismarck monument
+#     - buckingham palace
+#     - edinburgh castle
+#     - mount rushmore
+#     - castillo de san andrés
+#     - acropolis of athens
+#     - rhodes memorial
+#     - golden temple
+#     - mysore palace
     
-- intent: composer
-  examples: |
-
-- intent:   
+# - intent: composer
+#   examples: |
 
 - intent: goodbye
   examples: |

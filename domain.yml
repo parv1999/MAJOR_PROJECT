@@ -8,18 +8,24 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - origin
-  - date_of_building
-  - architect
   - greet_name
-
+  - human
+  - number
+  - loc
+ 
+  
 entities:
   - name
   - monument  
+  - keyword
 
 actions:
-  - action_date_of_building
-
+  # - action_date_of_building
+  - action_human
+  # - action_human
+  # - action_human
+  - action_loc
+  - action_number
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -40,11 +46,22 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
   
-  utter_date_of_building:
-  - text: "{building} was built {years} ago"
+  # utter_date_of_building:
+  # - text: 
+  utter_human/individual:
+  - text: "You are asking about {name} "
 
-  say_greet_name:
-  - text: "Hey there {name}, How are you !!!"
+  utter_human/description:
+  - text: "Description about {name} and keyword: {keyword}"
+
+  utter_number/date:
+  - text: "{building} was built {years} ago"
+  
+  utter_human/title:
+  - text: "Title of {name} is {keyword}"
+
+  utter_loc/origin:
+  - text: "Origin of {name} is {keyword}"
 
 session_config:
   session_expiration_time: 60
