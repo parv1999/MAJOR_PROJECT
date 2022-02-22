@@ -9,10 +9,18 @@ intents:
   - mood_unhappy
   - bot_challenge
   - greet_name
-  - human
-  - number
-  - loc
- 
+  - human:
+      is_retrieval_intent: true
+  - number:
+      is_retrieval_intent: True
+  - loc:
+      is_retrieval_intent: True
+  - enty:
+      is_retrieval_intent: True
+  - abbr:    
+      is_retrieval_intent: True
+  - desc:
+      is_retrieval_intent: True       
   
 entities:
   - name
@@ -22,11 +30,15 @@ entities:
 actions:
   # - action_date_of_building
   - action_human
-  # - action_human
-  # - action_human
-  - action_loc
-  - action_number
+  # # - action_human
+  # # - action_human
+  # - action_loc
+  # - action_number
 responses:
+
+  utter_human/description:
+  - text: "Description about {name} and keyword: {keyword}"
+
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -50,9 +62,6 @@ responses:
   # - text: 
   utter_human/individual:
   - text: "You are asking about {name} "
-
-  utter_human/description:
-  - text: "Description about {name} and keyword: {keyword}"
 
   utter_number/date:
   - text: "{building} was built {years} ago"

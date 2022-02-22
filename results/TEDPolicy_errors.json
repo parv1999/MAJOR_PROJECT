@@ -1,0 +1,15 @@
+[
+  {
+    "text": "Who is (reputed)[keyword] as Father of the Nation in India ?",
+    "entities": [
+      {
+        "text": "Who is (reputed)[keyword] as Father of the Nation in India ?",
+        "start": 29,
+        "end": 49,
+        "entity": "name",
+        "value": "Father of the Nation"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

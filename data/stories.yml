@@ -38,7 +38,7 @@ stories:
 - story: number and date
   steps: 
     - intent: number
-    - action: action_number
+    - action: utter_number
 
 # - story: human and description
 #   steps:
@@ -53,7 +53,7 @@ stories:
 - story: origin and location
   steps:
     - intent: loc
-    - action: action_loc
+    - action: utter_loc
 
 
 # - story: date of building path

@@ -1,0 +1,10 @@
+version: "3.0"
+stories:
+- story: Human and Individual (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: human/individual
+    entities:
+    - name: Father of the Nation  # predicted: keyword: Father of
+  - action: action_human  # predicted: utter_happy
